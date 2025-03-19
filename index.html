@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔞 Secret Access</title>
+    <style>
+        body {
+            background-color: black;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            padding: 50px;
+        }
+        #typingText {
+            font-size: 22px;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #0f0;
+            display: inline-block;
+            animation: blink 0.8s infinite;
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+        .glow-button {
+            background: red;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            box-shadow: 0 0 10px red;
+            transition: 0.3s;
+        }
+        .glow-button:hover {
+            box-shadow: 0 0 20px red;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="typingText"></h1>
+    <button id="unlockButton" class="glow-button">Unlock Now 🔞</button>
+
+    <audio id="moanSound">
+        <source src="https://voca.ro/1oWUOONLXwML" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // Hiệu ứng gõ chữ
+        let text = "Decrypting access... Ready for the secret?";
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("typingText").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 80);
+            }
+        }
+        typeWriter();
+
+        // Khi ấn nút, phát âm thanh và chuyển hướng sau 0.5s
+        document.getElementById("unlockButton").addEventListener("click", function() {
+            let audio = document.getElementById("moanSound");
+            audio.play();
+
+            setTimeout(() => {
+                window.location.href = "https://en.shrinke.me/Vid-SEXXX-key-61hkg";
+            }, 500);
+        });
+    </script>
+
+</body>
+</html>
